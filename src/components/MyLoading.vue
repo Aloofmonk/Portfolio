@@ -1,41 +1,15 @@
 <template>
 	<div class="loading">
-		<font-awesome-icon icon="fa-solid fa-spinner" spin spin-reverse class="text-6xl"/>
+		<font-awesome-icon icon="fa-solid fa-spinner" spin spin-reverse class="text-4xl" />
 		<p></p>
 	</div>
 </template>
 
-<style>
+<style scoped>
 .loading {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	padding-top: 15%;
 	height: 100vh;
 }
-
-.spinner {
-	border: 5px solid #f3f3f3;
-	border-top: 5px solid #3498db;
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	animation: spin 1s linear infinite;
-	margin-bottom: 20px;
-}
-
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-p {
-	font-size: 20px;
-	font-weight: bold;
-	color: #777;
-}</style>
+</style>

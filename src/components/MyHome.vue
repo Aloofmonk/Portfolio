@@ -11,10 +11,6 @@
 
 			<button class="button">Check out my Resume</button>
 			
-		
-			<!-- <div class="picture w-80">
-				<img class="rounded-full" src="../images/IMG_20200807_160444_1.jpg" alt="profile">
-			</div> -->
 		</div>
 	</div>
 </template>
