@@ -1,6 +1,7 @@
 <template>
    <MyLoading v-if="isLoading"></MyLoading>
     <div v-else>
+      <NavBar/>
       <MyHome/>
       <MyAboutMe/>
       <MyProjects/>
@@ -14,6 +15,7 @@ import MyAboutMe from './components/MyAboutMe';
 import MyProjects from './components/MyProjects';
 import MyContact from './components/MyContact';
 import MyLoading from './components/MyLoading.vue';
+import NavBar from './components/NavBar.vue';
 
 
 
@@ -25,6 +27,7 @@ export default {
     MyProjects,
     MyContact,
     MyLoading,
+    NavBar,
   },
   data() {
     return {
@@ -44,6 +47,7 @@ export default {
 <style>
 html{
   scroll-behavior: smooth;
+  background: #1f2833;
 }
 
 #app {

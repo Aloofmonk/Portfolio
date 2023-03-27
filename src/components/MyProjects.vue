@@ -94,7 +94,7 @@ name: 'MyProjects',
 .cards{
 width: 70%;
 display: grid;
-grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns: repeat(2,minmax(250px,1fr));
 padding: 20px;
 grid-gap: 40px;
 }
@@ -148,7 +148,7 @@ padding: 20px 10px;
 
 }
 h3{
-color: #ffffff;
+color: #66fcf1;
 font-weight: 600;
 font-size: 18px;
 margin: 10px 0 15px 0;
@@ -161,7 +161,8 @@ line-height: 30px;
 font-weight: 400;
 }
 .card-container{
-    padding-top: 350px;
+    padding-top: 400px;
+    padding-bottom: 0;
 }
 
 </style>
