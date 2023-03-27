@@ -1,7 +1,7 @@
 <template>
 	<div :class="{'navbar': true, 'navbar--hidden': isNavbarHidden }">
 		<div class="logo">
-			<h1>B</h1>
+			<h1><img src="../images/bee.png" alt="" class="w-10"></h1>
 		</div>
 
 		<div class="header-nav ">

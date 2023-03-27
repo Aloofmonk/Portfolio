@@ -3,12 +3,12 @@
 
 		<div class="footer flex justify-between">
 	
-			<div class="logo">B</div>
+			<div class="logo pt-14"><img src="../images/bee.png" alt="" class="w-10"></div>
 			<div class="links">
-				<ul class="flex gap-5">
-					<li>a</li>
-					<li>b</li>
-					<li>c</li>
+				<ul class="flex flex-col gap-5">
+					<li><img src="../images/github.png" alt="" class="w-6"></li>
+					<li><img src="../images/linkedin.jnp.webp" alt="" class="w-8"></li>
+					<li><img src="../images/twitter.png" alt="" class="w-6"></li>
 				</ul>
 			</div>
 		</div>
