@@ -13,14 +13,20 @@
 				<ul class="flex flex-col gap-5">
 					<li class="li-button"><a href="https://drive.google.com/file/d/1oHiAa40omJBT40nmi8ZFMJSSCIGGFrU5/view"><button class="button">resume</button></a>
 					</li>
-					<li><img src="../images/github.png" alt="" class="w-6"></li>
-					<li><img src="../images/linkedin.jnp.webp" alt="" class="w-8"></li>
-					<li><img src="../images/twitter.png" alt="" class="w-6"></li>
+					<li class=" img"><img src="../images/github.png" alt="" class="w-6"></li>
+					<li class=" img"><img src="../images/linke.png" alt="" class="w-6"></li>
+					<li class=" img">
+						<div class="img-back">
+							<img src="../images/twitter.png" alt="" class=" w-6">
+						</div>
+					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="base-container">
-			Designed & Built by Benjamin Nomba
+			<p>
+				Designed & Built by Benjamin Nomba
+			</p>
 		</div>
 	</div>
 </template>
@@ -50,8 +56,24 @@
 	background-position: right bottom;
 	transition: all .5s ease-out;
 	color: #66fcf1;
+	font-family: 'Roboto Mono', monospace;
 }
 .button:hover{
 	background-position: left bottom;
+}
+p{
+	font-family: 'Roboto Mono', monospace;
+	color:#c5c6c7;
+}
+.img{
+	padding-left: 35%;
+}
+img{
+	padding: 2px;
+}
+img:hover{
+	background: #66fcf1;
+	border-radius: 100%;
+	cursor: pointer;
 }
 </style>

@@ -152,6 +152,7 @@ color: #66fcf1;
 font-weight: 600;
 font-size: 18px;
 margin: 10px 0 15px 0;
+font-family: 'Ubuntu', sans-serif;
 }
 
 .details>p{
@@ -159,9 +160,10 @@ color: #a0a0a0;
 font-size: 15px;
 line-height: 30px;
 font-weight: 400;
+font-family: 'Roboto Mono', monospace;
 }
 .card-container{
-    padding-top: 400px;
+    padding-top: 600px;
     padding-bottom: 0;
 }
 

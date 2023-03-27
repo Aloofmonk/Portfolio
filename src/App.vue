@@ -45,6 +45,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Ubuntu:wght@700&display=swap');
+
 html{
   scroll-behavior: smooth;
   background: #1f2833;

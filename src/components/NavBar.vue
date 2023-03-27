@@ -14,17 +14,19 @@
 			<div class="header-nav ">
 				<ul class="flex gap-5 pt-2">
 					<li>
-						<a href="#about">about</a>
+						<a href="#about"> <span>01.</span> about</a>
 					</li>
 					<!-- <li>
 						<a href="#">Experience</a>
 					</li> -->
 					<li>
-						<a href="#projects">projects</a>
+						<a href="#projects"><span>02.</span> projects</a>
 					</li>
-					<li>
-						<a href="#contact">contact</a>
-					</li>	
+					<div class="li">
+						<li>
+							<a href="#contact"><span>03.</span> contact</a>
+						</li>	
+					</div>
 					
 				</ul>
 			</div>
@@ -88,12 +90,25 @@ export default {
 .navbar--hidden {
   transform: translateY(-100px);
 }
-.header-nav{
+/* .header-nav{
 	color: #c5c6c7;
-}
+} */
 
 h1{
 	padding-bottom: 5px;
+}
+li{
+	color: #c5c6c7;
+	transition: color 0.5s ease-out;
+	font-family: 'Roboto Mono', monospace;
+}
+li:hover{
+	color: #66fcf1;
+	transition: color 0.5s ;
+}
+li:visited{
+	color: #66fcf1;
+	transition: color 0.5s ;
 }
 
 </style>

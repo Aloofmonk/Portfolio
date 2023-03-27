@@ -43,14 +43,18 @@ import MyFooter from './MyFooter';
 	background-position: right bottom;
 	transition: all .5s ease-out;
 	color: #66fcf1;
+	font-family: 'Roboto Mono', monospace;
 }
 .button:hover{
 	background-position: left bottom;
 }
 h1{
 	color: #66fcf1;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 50px;
 }
 .text{
 	color: #c5c6c7;
+	font-family: 'Roboto Mono', monospace;
 }
 </style>

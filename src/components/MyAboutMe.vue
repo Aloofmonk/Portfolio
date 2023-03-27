@@ -47,9 +47,12 @@
 }
 h1{
 	color: #66fcf1;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 35px;
 }
 p{
 	color: #c5c6c7;
+	font-family: 'Roboto Mono', monospace;
 }
 
 </style>
