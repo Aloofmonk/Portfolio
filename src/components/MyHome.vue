@@ -9,7 +9,10 @@
 			<h1 class="text-6xl font-bold mb-7">I build things web related.</h1>
 			<p class="mb-12 w-2/4">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, My focus has always been on building accessible, human-centered products and Curating indepth Knowledge in my field of specialization along the way.</p>
 
-			<button class="button">Check out my Resume</button>
+			<a href="https://drive.google.com/file/d/1oHiAa40omJBT40nmi8ZFMJSSCIGGFrU5/view">
+
+				<button class="button">Check out my Resume</button>
+			</a>
 			
 		</div>
 	</div>

@@ -3,8 +3,10 @@
 		<div class="contact-container">
 
 			<h1>Get In Touch</h1>
-			<p>I’m very much open currently, to looking for any new opportunities, my inbox is always open. I’ll be sure to shoota response as soon as I can, Thank You!</p>
-			<button>Email Me</button>
+			<p>I’m very much open currently, for any opportunity. My inbox is always open. I’ll be sure to shoot a response as soon as I can, Thank You!</p>
+			<a href="http://bnomba0704@gmail.com">
+				<button>Email Me</button>
+			</a>
 		</div>
 	</div>
 	<MyFooter id="contact"/>
