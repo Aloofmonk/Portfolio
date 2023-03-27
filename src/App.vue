@@ -1,8 +1,11 @@
 <template>
-  <MyHome/>
-  <MyAboutMe/>
-  <MyProjects/>
-  <MyContact/>
+   <MyLoading v-if="isLoading"></MyLoading>
+    <div v-else>
+      <MyHome/>
+      <MyAboutMe/>
+      <MyProjects/>
+      <MyContact/>
+    </div>
 </template>
 
 <script>
@@ -10,6 +13,7 @@ import MyHome from './components/MyHome.vue';
 import MyAboutMe from './components/MyAboutMe';
 import MyProjects from './components/MyProjects';
 import MyContact from './components/MyContact';
+import MyLoading from './components/MyLoading.vue';
 
 
 
@@ -20,7 +24,20 @@ export default {
     MyAboutMe,
     MyProjects,
     MyContact,
+    MyLoading,
+  },
+  data() {
+    return {
+      isLoading: true
+    }
+  },
+  mounted() {
+    // Simulate a loading delay
+    setTimeout(() => {
+      this.isLoading = false
+    }, 3000)
   }
+
 }
 </script>
 
