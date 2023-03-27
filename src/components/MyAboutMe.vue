@@ -1,7 +1,7 @@
 <template>
 	<div id="about" class="About flex h-screen justify-center items-center gap-12">
 		<div class="about-me w-96 text-left">
-			<h1>About</h1>
+			<h1> <span>01.</span> About</h1>
 			<p>
 
 				Hello! My name is Benjamin and I enjoy creating things that live on the internet. My interest in web development and engineering started back in 2018 when I started my computer science major — I started with the basics and soon after I knew a lot about HTML & CSS!
@@ -25,6 +25,9 @@
 </script>
 
 <style scoped>
+span{
+	font-family: 'Roboto Mono', monospace;
+}
 .image{
 	border: 2px solid #66fcf1;
 	border-radius: 6px;
@@ -35,15 +38,13 @@
 	filter: grayscale(100%);
 	left: 15px;
 	bottom: 10px;
-	transition:all 0.5s ;
-	transition-delay: 0.4s;
+	transition:all 0.15s ;
 }
 .img:hover{
 	position: relative;
 	filter: grayscale(0%);
 	left: 10px;
-	transition: all 0.5s ;
-	transition-delay: 0.3s ;
+	transition: all 0.15s ;
 }
 h1{
 	color: #66fcf1;
