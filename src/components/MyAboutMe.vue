@@ -8,7 +8,7 @@
 	
 				Fast-forward to today, and I’ve had the privilege of attending Alt-School Africa. A Pan-African Technology School and a huge organisation. My main focus these days is building accessible, inclusive products and digital experiences for a variety of users.
 	
-				I also Do Technical writting and I like to learn various technologies at my spare time which will help me build better web applictions.
+				I also Do Technical writting and I like to learn various technologies in my spare time, which will help me build better web applictions.
 			</p>
 		</div>
 
@@ -45,6 +45,9 @@ span{
 	filter: grayscale(0%);
 	left: 10px;
 	transition: all 0.15s ;
+}
+.image:hover{
+	background: #14504d;
 }
 h1{
 	color: #66fcf1;

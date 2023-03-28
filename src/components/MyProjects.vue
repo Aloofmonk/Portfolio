@@ -1,7 +1,7 @@
 <template>
 <div id="projects" class="card-container flex flex-col h-screen">
     <div class="text">
-        <h1 class="h1"> <span>02.</span> Project</h1>
+        <h1 class="h1"> <span>02.</span> Projects</h1>
     </div>
     <div class="container-card flex  justify-center items-center">
         <div class="cards">
@@ -186,9 +186,8 @@ font-family: 'Roboto Mono', monospace;
     padding-top: 60px;
 }
 .font{
-	padding: 2px;
     transform: translateY(0);
-    transition: all 0.6s ease-out;
+    transition: all 0.5s ease-out;
 }
 .font:hover{
 	color: #66fcf1;

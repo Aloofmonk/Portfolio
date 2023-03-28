@@ -1,6 +1,6 @@
 <template>
 	
-	<div class="home flex justify-center pt-14 h-screen">
+	<div id="home" class="home flex justify-center pt-14 h-screen">
 
 		<div class="home-container text-left p-9 pt-9">
 

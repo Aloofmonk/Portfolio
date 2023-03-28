@@ -4,7 +4,7 @@
 		<div class="footer flex justify-between">
 	
 			<div class="logo pt-28">
-				<a href="./MyHome.vue">
+				<a href="#home">
 					
 					<img src="../images/bee.png" alt="" class=" logo w-11">
 				</a>
@@ -25,7 +25,7 @@
 		</div>
 		<div class="base-container">
 			<p>
-				Designed & Built by Benjamin Nomba
+				Designed & Built by <span><a href="https://bnomba0704@gmail.com">Benjamin Nomba</a></span> 
 			</p>
 		</div>
 	</div>
@@ -65,6 +65,15 @@ p{
 	font-family: 'Roboto Mono', monospace;
 	color:#c5c6c7;
 }
+.logo{
+    transform: translateY(0);
+    transition: all 0.5s ease-out;
+}
+.logo:hover{
+	color: #66fcf1;
+	cursor: pointer;
+    transform: translateY(-4px);
+}
 .img{
 	padding-left: 35%;
 }
@@ -75,5 +84,9 @@ img:hover{
 	background: #66fcf1;
 	border-radius: 100%;
 	cursor: pointer;
+}
+span{
+	font-family: 'Ubuntu', sans-serif;
+	color: #66fcf1;
 }
 </style>
