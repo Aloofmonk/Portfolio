@@ -13,11 +13,16 @@
 				<ul class="flex flex-col gap-5">
 					<li class="li-button"><a href="https://drive.google.com/file/d/1oHiAa40omJBT40nmi8ZFMJSSCIGGFrU5/view"><button class="button">resume</button></a>
 					</li>
-					<li class=" img"><img src="../images/github.png" alt="" class="w-6"></li>
-					<li class=" img"><img src="../images/linke.png" alt="" class="w-6"></li>
+					<li class=" img">
+						<a href="https://github.com/Aloofmonk"><img src="../images/github.png" alt="" class="w-6">
+						</a>
+					</li>
+					<li class=" img">
+						<a href="https://www.linkedin.com/in/benjamin-nomba-61351621a/"><img src="../images/linke.png" alt="" class="w-6"></a>
+					</li>
 					<li class=" img">
 						<div class="img-back">
-							<img src="../images/twitter.png" alt="" class=" w-6">
+							<a href="https://twitter.com/codersoda"><img src="../images/twitter.png" alt="" class=" w-6"></a>
 						</div>
 					</li>
 				</ul>
