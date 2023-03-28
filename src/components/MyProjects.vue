@@ -63,21 +63,20 @@
             </div>
             <div class="card card1">
                 <div class="container">
-                    <img src="../images/grid.png" alt="las vegas">
+                    <img src="../images/portfolio.png" alt="las vegas">
                 </div>
                 <div class="details">
                     <div class="project-link flex justify-evenly">
-                        <a href="https://github.com/Aloofmonk/HTML">
+                        <a href="https://github.com/Aloofmonk/myPortfolio">
                             <font-awesome-icon icon="fa-solid fa-code-compare" class="font" />
                         </a>
-                        <h3>Grid</h3>
-                        <a href="https://gridgrider.vercel.app/">
+                        <h3>Portfolio</h3>
+                        <a href="https://benjaminnomba.vercel.app/MyHome.vue">
                             <font-awesome-icon icon="arrow-up-right-from-square" class="font" />
                         </a>
                     </div>
                     
-                    <p>A website made to showcase pictures in a grid. It also displays quotes when the pictures are
-                    hovered over.</p>
+                    <p>A website made to showcase my work, while being itself a project that I'm proud of. It shows howfar I've come and how much further I'm willing to go in my budding SE career. Source code is made totally accessible!.</p>
                 </div>
             </div>
             
@@ -136,7 +135,6 @@ transition: all 3s ease-out;
 }
 .card1:hover>.container:after{
 background-image: none;
-/* transition: all 3s ease-out; */
 }
 .card2>.container:after{
 background-image: linear-gradient(
@@ -188,6 +186,7 @@ font-family: 'Roboto Mono', monospace;
 .font{
     transform: translateY(0);
     transition: all 0.5s ease-out;
+    color: #9a9b9c;;
 }
 .font:hover{
 	color: #66fcf1;

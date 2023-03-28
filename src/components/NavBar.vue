@@ -12,7 +12,7 @@
 			</div>
 	
 			<div class="header-nav ">
-				<ul class="flex gap-5 pt-2">
+				<ul class="flex gap-8 pt-2">
 					<li>
 						<a href="#about"> <span>01.</span> about</a>
 					</li>
@@ -101,6 +101,7 @@ li{
 	color: #c5c6c7;
 	transition: color 0.5s ease-out;
 	font-family: 'Roboto Mono', monospace;
+	font-size: 14px;
 }
 li:hover{
 	color: #66fcf1;
