@@ -1,5 +1,6 @@
 <template>
-<div id="projects" class="card-container flex flex-col h-screen">
+    <div id="projects"></div>
+<div class="card-container flex flex-col h-screen">
     <div class="text">
         <h1 class="h1"> <span>02.</span> Projects</h1>
     </div>
@@ -181,7 +182,7 @@ font-weight: 400;
 font-family: 'Roboto Mono', monospace;
 }
 .card-container{
-    padding-top: 60px;
+    margin-top: 120px;
 }
 .font{
     transform: translateY(0);

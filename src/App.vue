@@ -29,9 +29,12 @@ export default {
     MyLoading,
     NavBar,
   },
+  props: {
+    activeLink: String
+  },
   data() {
     return {
-      isLoading: true
+      isLoading: true,
     }
   },
   mounted() {
