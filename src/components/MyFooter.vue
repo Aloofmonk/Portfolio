@@ -3,7 +3,7 @@
 
 		<div class="footer flex justify-between">
 	
-			<div class="logo pt-28">
+			<div class="logo-img pt-28">
 				<a href="#home">
 					
 					<img src="../images/bee.png" alt="" class=" logo w-11">
@@ -14,15 +14,15 @@
 					<li class="li-button"><a href="https://drive.google.com/file/d/1oHiAa40omJBT40nmi8ZFMJSSCIGGFrU5/view"><button class="button">resume</button></a>
 					</li>
 					<li class=" img">
-						<a href="https://github.com/Aloofmonk"><img src="../images/github.png" alt="" class="w-6">
+						<a href="https://github.com/Aloofmonk"><img src="../images/github.png" alt="" class=" icon w-6">
 						</a>
 					</li>
 					<li class=" img">
-						<a href="https://www.linkedin.com/in/benjamin-nomba-61351621a/"><img src="../images/linke.png" alt="" class="w-6"></a>
+						<a href="https://www.linkedin.com/in/benjamin-nomba-61351621a/"><img src="../images/linke.png" alt="" class=" icon w-6"></a>
 					</li>
 					<li class=" img">
 						<div class="img-back">
-							<a href="https://twitter.com/codersoda"><img src="../images/twitter.png" alt="" class=" w-6"></a>
+							<a href="https://twitter.com/codersoda"><img src="../images/twitter.png" alt="" class=" icon w-6"></a>
 						</div>
 					</li>
 				</ul>
@@ -65,6 +65,7 @@
 }
 .button:hover{
 	background-position: left bottom;
+	transform: translateY(-4px);
 }
 p{
 	font-family: 'Roboto Mono', monospace;
@@ -77,21 +78,29 @@ p{
 .logo:hover{
 	color: #66fcf1;
 	cursor: pointer;
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+	background: #66fcf1; 
+	border-radius: 100%;
+	
 }
 .img{
 	padding-left: 35%;
 }
-img{
+.icon{
 	padding: 2px;
+	transition: all 0.3s ease-out;
+	filter: invert(50%);
 }
-img:hover{
-	background: #66fcf1;
-	border-radius: 100%;
+.icon:hover{
+	border: 1px solid #66fcf1;
 	cursor: pointer;
+	transform: translateY(-4px);
 }
 span{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Roboto Mono', monospace;
 	color: #66fcf1;
+}
+span:hover{
+	border-bottom: 2px solid #66fcf1;
 }
 </style>
