@@ -14,17 +14,18 @@
 			<div class="header-nav ">
 				<ul class="flex gap-8 pt-2">
 					<li>
-						<a href="#about"> <span>01.</span> about</a>
+						
+						<a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" href="#about"> <span>01.</span> about</a>
 					</li>
 					<!-- <li>
 						<a href="#">Experience</a>
 					</li> -->
 					<li>
-						<a href="#projects"><span>02.</span> projects</a>
+						<a @click="activeLink = 'projects'" :class="[activeLink === 'projects' ? 'active' : '']" href="#projects"><span>02.</span> projects</a>
 					</li>
 					<div class="li">
 						<li>
-							<a href="#contact"><span>03.</span> contact</a>
+							<a @click="activeLink = 'contact'" :class="[activeLink === 'contact' ? 'active' : '']" href="#contact"><span>03.</span> contact</a>
 						</li>	
 					</div>
 					
@@ -41,6 +42,7 @@ export default {
 		return {
 			prevScrollPos: 0,
 			isNavbarHidden: false,
+			activeLink: '',
 		};
 	},
 	computed: {
@@ -110,6 +112,13 @@ li:hover{
 li:visited{
 	color: #66fcf1;
 	transition: color 0.5s ;
+}
+.active{
+	border-bottom:2px solid #66fcf1;
+	padding-bottom: 3px;
+	color: #66fcf1;
+	transition: all 0.5 ease-out;
+	border-radius: 2px;
 }
 
 </style>

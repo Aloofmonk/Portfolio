@@ -5,6 +5,15 @@
 	</div>
 </template>
 
+<script>
+	export default{
+		name: 'MyLoadingpage',
+		methods: {}
+	}
+	
+
+</script>
+
 <style scoped>
 .loading {
 	display: flex;
@@ -16,3 +25,6 @@
 	color: #66fcf1;
 }
 </style>
+
+
+
