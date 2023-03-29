@@ -1,13 +1,13 @@
 <template>
 	
-	<div class="home flex justify-center pt-14 h-screen">
+	<div class="home flex justify-center">
 
-		<div class="home-container text-left p-9 pt-9" >
+		<div class="home-container text-left" >
 
-			<p class="p-2 mb-4"  v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1000">Hi, my name is </p>
-			<h1 v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1100" class="text-6xl font-bold mb-4">BENJAMIN NOMBA.</h1>
+			<p class="hi-p"  v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1000">Hi, my name is </p>
+			<h1 v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1100" class="text-7xl font-bold mb-5">BENJAMIN NOMBA.</h1>
 			<h1 v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1200" class="h1-2 text-6xl font-bold mb-7">I build things web related.</h1>
-			<p v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1300" class="mb-12 w-4/6">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. My focus has always been building accessible, human-centered products and Curating indepth Knowledge in my specialization along the way.</p>
+			<p v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1300" class="mb-14 w-4/6">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. My focus has always been building accessible, human-centered products and Curating indepth Knowledge in my specialization along the way.</p>
 
 			<div v-motion :initial="{ opacity: 0,  x: -200, }" :enter="{ opacity: 1,  x: 0, }" :delay="1400" class="button-div">
 
@@ -32,15 +32,21 @@ export default{
 </script>
 
 <style scoped>
+.home{
+	margin-bottom: 60px;
+	padding-top: 150px
+}
 .home-container{
-	/* border: 2px solid black; */
 	width: 75%;
 	height: 100%;
 	box-sizing: border-box;
 }
+.hi-p{
+	padding-bottom: 20px;
+}
 .button{
 	border: 2px solid #66fcf1;
-	padding: 20px;
+	padding: 15px 30px;
 	font-family: 'Roboto Mono', monospace;
 	border-radius: 5px;
 	background: linear-gradient(to right, #2a7974 50%, #1f2833 50%);

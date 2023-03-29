@@ -5,6 +5,7 @@
       <MyHome/>
       <MyAboutMe/>
       <MyProjects/>
+      <MyTechnologies/>
       <MyContact/>
     </div>
 </template>
@@ -16,6 +17,7 @@ import MyProjects from './components/MyProjects';
 import MyContact from './components/MyContact';
 import MyLoading from './components/MyLoading.vue';
 import NavBar from './components/NavBar.vue';
+import MyTechnologies from './components/MyTechnologies.vue';
 
 
 
@@ -28,6 +30,7 @@ export default {
     MyContact,
     MyLoading,
     NavBar,
+    MyTechnologies,
   },
   props: {
     activeLink: String
@@ -53,6 +56,8 @@ export default {
 html{
   scroll-behavior: smooth;
   background: #1f2833;
+  padding: 0;
+  margin: 0;
 }
 
 #app {
@@ -61,6 +66,5 @@ html{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

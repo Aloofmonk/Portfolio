@@ -1,5 +1,5 @@
 <template>
-	<div class="contact h-screen flex justify-center">
+	<div class="contact  flex justify-center">
 		<div class="contact-container ">
 
 			<h1 v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="500" class="mb-8">Get In Touch</h1>
@@ -28,11 +28,10 @@ import MyFooter from './MyFooter';
 
 <style scoped>
 .contact-container{
-	margin-top: 29%;
 	width: 40%;
 }
 .contact{
- margin-top: 15%;
+ padding-top: 177px;
 }
 .button{
 	border: 2px solid #66fcf1;
