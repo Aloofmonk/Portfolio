@@ -28,6 +28,7 @@
 					</li>	
 				</div>
 				
+				
 			</ul>
 		</div>
 		
@@ -89,13 +90,6 @@ export default {
 	position: relative;
 	bottom: 5px;
 }
-.header-nav{
-	/* box-sizing: border-box; */
-}
-
-h1{
-	/* padding-bottom: 5px; */
-}
 li{
 	color: #c5c6c7;
 	transition: color 0.5s ease-out;
@@ -113,12 +107,8 @@ li:visited{
 }
 .active{
 	border-bottom:2px solid #66fcf1;
-	/* padding-bottom: 3px; */
 	color: #66fcf1;
 	transition: all 0.5 ease-out;
 	border-radius: 2px;
-}
-ul{
-
 }
 </style>
