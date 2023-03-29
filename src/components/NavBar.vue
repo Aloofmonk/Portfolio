@@ -13,18 +13,18 @@
 	
 			<div class="header-nav ">
 				<ul class="flex gap-8 pt-2">
-					<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0}">
+					<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0}" :delay="350">
 						
 						<a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" href="#about"> <span>01.</span> about</a>
 					</li>
 					<!-- <li>
 						<a href="#">Experience</a>
 					</li> -->
-					<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="250">
+					<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="450">
 						<a @click="activeLink = 'projects'" :class="[activeLink === 'projects' ? 'active' : '']" href="#projects"><span>02.</span> projects</a>
 					</li>
 					<div class="li">
-						<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="350">
+						<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="550">
 							<a @click="activeLink = 'contact'" :class="[activeLink === 'contact' ? 'active' : '']" href="#contact"><span>03.</span> contact</a>
 						</li>	
 					</div>

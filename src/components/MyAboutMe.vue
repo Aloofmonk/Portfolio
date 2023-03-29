@@ -14,7 +14,7 @@
 		</div>
 
 		<div v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="700" class="image w-72 ">
-			<img class=" img " src="../images/IMG_20200807_160444_1.jpg" alt="pic">
+			<img v-motion :initial="{ opacity: 0, x: 50 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="750" class=" img " src="../images/IMG_20200807_160444_1.jpg" alt="pic">
 		</div>
 	</div>
 </template>
