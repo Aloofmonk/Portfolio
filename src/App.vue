@@ -63,6 +63,7 @@ html{
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
