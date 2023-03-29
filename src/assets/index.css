@@ -4,8 +4,7 @@
 
 /* Change the width and height of the scrollbar */
 ::-webkit-scrollbar {
-	width: 5px;
-	height: 2px;
+	width: 6px;
 }
 
 /* Change the background color of the scrollbar track */
@@ -16,10 +15,22 @@
 /* Change the color and style of the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
 	background-color: #888;
-	border-radius: 100%;
+	border-radius: 5px;
 }
 
 /* Change the color and style of the scrollbar thumb when hovered */
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #555;
 }
+
+/* .fade-in {
+	background-color: #2ecc71;
+	height: 500px;
+	margin-bottom: 50px;
+	opacity: 0;
+	transition: 0.3s all ease-out;
+	transform: scale(0.8);
+	box-sizing: border-box;
+	padding: 20px;
+	display: inline-block;
+} */

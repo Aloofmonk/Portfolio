@@ -2,7 +2,7 @@
 	<div :class="{'navbar': true, 'navbar--hidden': isNavbarHidden }">
 		<div class="nav-cont">
 
-			<div class="logo">
+			<div class="logo" v-motion :initial="{ opacity: 0, x: -100}" :enter="{ opacity: 1, x: 0}" :delay="1500">
 				<div  class="mb-8">
 					<a href="./MyHome.vue">
 
@@ -13,18 +13,18 @@
 	
 			<div class="header-nav ">
 				<ul class="flex gap-8 pt-2">
-					<li>
+					<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0}">
 						
 						<a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" href="#about"> <span>01.</span> about</a>
 					</li>
 					<!-- <li>
 						<a href="#">Experience</a>
 					</li> -->
-					<li>
+					<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="250">
 						<a @click="activeLink = 'projects'" :class="[activeLink === 'projects' ? 'active' : '']" href="#projects"><span>02.</span> projects</a>
 					</li>
 					<div class="li">
-						<li>
+						<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="350">
 							<a @click="activeLink = 'contact'" :class="[activeLink === 'contact' ? 'active' : '']" href="#contact"><span>03.</span> contact</a>
 						</li>	
 					</div>

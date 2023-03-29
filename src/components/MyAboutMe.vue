@@ -1,8 +1,8 @@
 <template>
-	<div id="about" class="About flex h-screen justify-center items-center gap-12">
-		<div class="about-me w-2/5 text-left">
-			<h1> <span>01.</span> About</h1>
-			<p>
+	<div  id="about" class="About flex h-screen justify-center items-center gap-12" >
+		<div class="about-me w-2/5 text-left" >
+			<h1 v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="500"> <span>01.</span> About</h1>
+			<p v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="700">
 				Hello! My name is Benjamin and I enjoy creating things that live on the internet. My interest in web development and engineering started back in 2018 when I started my computer science major — I started with the basics and soon after I knew a lot about HTML & CSS!
 				<br>
 				<br>
@@ -13,13 +13,15 @@
 			</p>
 		</div>
 
-		<div class="image w-72 ">
+		<div v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="700" class="image w-72 ">
 			<img class=" img " src="../images/IMG_20200807_160444_1.jpg" alt="pic">
 		</div>
 	</div>
 </template>
 
 <script>
+
+
 	export default{
 		name: 'MyAboutMe'
 	}

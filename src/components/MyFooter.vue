@@ -92,7 +92,6 @@ p{
 	filter: invert(50%);
 }
 .icon:hover{
-	border: 1px solid #66fcf1;
 	cursor: pointer;
 	transform: translateY(-4px);
 }

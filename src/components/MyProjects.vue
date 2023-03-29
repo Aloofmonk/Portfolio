@@ -2,11 +2,11 @@
     <div id="projects"></div>
 <div class="card-container flex flex-col h-screen">
     <div class="text">
-        <h1 class="h1"> <span>02.</span> Projects</h1>
+        <h1 v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="500" class="h1"> <span>02.</span> Projects</h1>
     </div>
     <div class="container-card flex  justify-center items-center">
         <div class="cards">
-            <div class="card card1">
+            <div v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="700" class="card card1">
                 <div class="container">
                     <img src="../images/first.png" alt="las vegas">
                 </div>
@@ -24,7 +24,7 @@
         access to a variety of movies and enables them to save their favorite movies to watch later.</p>
                 </div>
             </div>
-            <div class="card card1">
+            <div v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="800" class="card card1">
                 <div class="container">
                     <img src="../images/calc.png" alt="las vegas">
                 </div>
@@ -43,7 +43,7 @@
         respectively.</p>
                 </div>
             </div>
-            <div class="card card1">
+            <div v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="200" class="card card1">
                 <div class="container">
                     <img src="../images/buyy.png" alt="las vegas">
                 </div>
@@ -62,7 +62,7 @@
         keep track of selected items and total amount.</p>
                 </div>
             </div>
-            <div class="card card1">
+            <div v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="300" class="card card1">
                 <div class="container">
                     <img src="../images/portfolio.png" alt="las vegas">
                 </div>

@@ -2,12 +2,12 @@
 	<div class="contact h-screen flex justify-center">
 		<div class="contact-container ">
 
-			<h1 class="mb-8">Get In Touch</h1>
-			<div class="text mb-11">
+			<h1 v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="500" class="mb-8">Get In Touch</h1>
+			<div v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="700" class="text mb-11">
 
-				<h4 class="text ">I’m very much open currently, for any opportunity. My inbox is always open. I’ll be sure to shoot a response as soon as I can, Thank You!</h4>
+				<h4 class="text ">I’m very much open currently, to any opportunity. My inbox is always open. I’ll be sure to shoot a response as soon as I can, Thank You!</h4>
 			</div>
-			<a href="http://bnomba0704@gmail.com">
+			<a v-motion :initial="{ opacity: 0, y: 100 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="800" href="http://bnomba0704@gmail.com">
 				<button class="button">Email Me</button>
 			</a>
 		</div>

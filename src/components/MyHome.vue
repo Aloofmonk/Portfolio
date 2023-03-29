@@ -2,16 +2,19 @@
 	
 	<div id="home" class="home flex justify-center pt-14 h-screen">
 
-		<div class="home-container text-left p-9 pt-9">
+		<div class="home-container text-left p-9 pt-9" >
 
-			<p class="p-2 mb-4">Hi, my name is</p>
-			<h1 class="text-6xl font-bold mb-4">BENJAMIN NOMBA.</h1>
-			<h1 class="h1-2 text-6xl font-bold mb-7">I build things web related.</h1>
-			<p class="mb-12 w-3/4">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, My focus has always been on building accessible, human-centered products and Curating indepth Knowledge in my field of specialization along the way.</p>
+			<p class="p-2 mb-4"  v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1000">Hi, my name is </p>
+			<h1 v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1100" class="text-6xl font-bold mb-4">BENJAMIN NOMBA.</h1>
+			<h1 v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1200" class="h1-2 text-6xl font-bold mb-7">I build things web related.</h1>
+			<p v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1300" class="mb-12 w-4/6">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. My focus has always been building accessible, human-centered products and Curating indepth Knowledge in my specialization along the way.</p>
 
-			<a href="https://drive.google.com/file/d/1oHiAa40omJBT40nmi8ZFMJSSCIGGFrU5/view">
-				<button class="button">Check out my Resume</button>
-			</a>
+			<div v-motion :initial="{ opacity: 0,  x: -200, }" :enter="{ opacity: 1,  x: 0, }" :delay="1400" class="button-div">
+
+				<a  href="https://drive.google.com/file/d/1oHiAa40omJBT40nmi8ZFMJSSCIGGFrU5/view">
+					<button class="button">Check out my Resume</button>
+				</a>
+			</div>
 			
 		</div>
 	</div>
