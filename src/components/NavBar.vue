@@ -1,6 +1,19 @@
 <template>
 	<div :class="{'navbar': true, 'navbar--hidden': isNavbarHidden }">
-		
+
+		<button v-motion :initial="{ y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="550" @click="ex = !ex" id="menu-btn" class=" block hamburger" :class="[ex === true ? 'open' : '' ]">
+			<span class="ham1"></span>
+			<span class="ham2"></span>
+			<span class="ham3"></span>
+		</button>
+
+		<div class="neu" :id="[ex === true ? 'open-menu' : 'menu']">
+			<a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" href="#about">about</a>
+			<a @click="activeLink = 'projects'" :class="[activeLink === 'projects' ? 'active' : '']" href="#projects">projects</a>
+			<a @click="activeLink = 'technologies'" :class="[activeLink === 'technologies' ? 'active' : '']" href="#technologies">technologies</a>
+			<a @click="activeLink = 'contact'" class="cont" :class="[activeLink === 'contact' ? 'active' : '']" href="#contact">contact</a>
+		</div>
+
 		<div class="logo" v-motion :initial="{ opacity: 0, x: -100}" :enter="{ opacity: 1, x: 0}" :delay="1500">
 			<div  class="">
 				<a href="./MyHome.vue">
@@ -43,6 +56,8 @@ export default {
 			prevScrollPos: 0,
 			isNavbarHidden: false,
 			activeLink: '',
+			ex: false,
+			view: 'menu'
 		};
 	},
 	computed: {
@@ -110,5 +125,129 @@ li:visited{
 	color: #66fcf1;
 	transition: all 0.5 ease-out;
 	border-radius: 2px;
+}
+.neu{
+	display: none;
+}
+.hamburger{
+	display: none;
+}
+
+@media only screen and (max-width: 500px){
+.header-nav{
+	display: none;
+}
+.navbar{
+	
+	z-index: 100;
+	background: none;  
+	backdrop-filter: blur(0px);
+	color: #000;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+
+/* .navbar--hidden {
+  transform: translateY(0px);
+} */
+
+	.logo{
+		display: none;
+	}
+	
+	#menu{
+		display:flex;
+		position: fixed;
+		/* bottom: 50px; */
+		top: 35px;
+		left: -300px;
+		flex-direction: column;
+		align-items: center;
+		align-self: end;
+		display: none;
+		padding: 0 100px;
+		padding-top: 20px;
+		margin-top: 10;
+		font-weight: bold;
+		background: rgb(35, 59, 89); ;
+		align-self: center;
+		width: auto;
+		z-index: 100;
+		color: #c5c6c7;
+		transition: left .7s ease-out;
+
+	}
+	#open-menu{
+		display:flex;
+		position: fixed;
+		/* bottom: 50px; */
+		top: 35px;
+		left: 35px;
+		flex-direction: column;
+		align-items: center;
+		align-self: end;
+		visibility: visible;
+		padding: 0 100px;
+		padding-top: 20px;
+		margin-top: 10;
+		font-weight: bold;
+		background: #283647 ;
+		align-self: center;
+		width: auto;
+		z-index: 1000;
+		color: #c5c6c7;
+		border-radius: 5px;
+		transition: left .7s ease-out;
+
+	}
+	a{
+		margin-bottom: 40px;
+	}
+	.cont{
+		margin-bottom: 20px;
+	}
+	.hamburger{
+		position: absolute;
+		left: 300px;
+		cursor: pointer;
+		width: 24px;
+		height: 24px;
+		transition: all 0.25;
+		position: fixed;
+		display: inherit;
+		z-index: 10000;
+		outline: none;
+	}
+	.ham1,
+	.ham2,
+	.ham3{
+		position: absolute;
+		top: 0;
+		width: 24px;
+		height: 2px;
+		background: #000;
+		transform: rotate(0);
+		transition: all 0.5s;
+		border: 1px solid #66fcf1;
+	}
+	.ham2{
+		transform: translateY(7px);
+	}
+	.ham3{
+		transform: translateY(14px);
+	}
+	.open{
+		transform: rotate(90deg);
+		transform: translateY(0px);
+	}
+	.open .ham1{
+		transform: rotate(45deg) translateY(6px) translate(6px);
+	}
+	.open .ham2{
+		display: none;
+	}
+	.open .ham3{
+		transform: rotate(-45deg) translateY(6px) translate(-6px);
+	}
 }
 </style>

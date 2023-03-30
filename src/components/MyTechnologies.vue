@@ -140,5 +140,14 @@ img{
 	display: grid;
 	grid-template-columns: repeat(2, 50px);
 }
+.tech-container{
+	padding-top: 30px;
+}
+p{
+	padding: 0 25px;
+}
+h1{
+	margin-bottom: 5px;
+}
 }
 </style>

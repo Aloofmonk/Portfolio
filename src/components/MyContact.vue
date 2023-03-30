@@ -1,5 +1,6 @@
 <template>
 	<div class="contact  flex justify-center">
+		<div id="contact" class="small-id"></div>
 		<div class="contact-container ">
 
 			<h1 v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="500" class="mb-8">Get In Touch</h1>
@@ -55,6 +56,11 @@ h1{
 .text{
 	color: #c5c6c7;
 	font-family: 'Roboto Mono', monospace;
+	width: 508px;
+	padding-left: 30%;
+}
+.small-id{
+	visibility: hidden;
 }
 @media only screen and (max-width: 500px){
 h1{
@@ -63,9 +69,15 @@ h1{
 	white-space: nowrap;
 	
 }
+.small-id{
+	display: inherit;
+}
 .text{
 	width: 95%;
 	padding-left: 20px;
+}
+.contact{
+	padding-top: 80px;
 }
 }
 </style>

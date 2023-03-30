@@ -43,6 +43,7 @@
 </script>
 
 <style scoped>
+
 .footer{
 	border-bottom: 1px solid black;
 	padding-bottom: 25px;
@@ -56,7 +57,8 @@
 .button{
 	border: 2px solid #66fcf1;
 	padding: 5px 10px 5px 10px;
-	border-radius: 5px;background: linear-gradient(to right, #2a7974 50%, #1f2833 50%);
+	border-radius: 5px;
+	background: linear-gradient(to right, #2a7974 50%, #1f2833 50%);
 	background-size: 200% 100%;
 	background-position: right bottom;
 	transition: all .5s ease-out;
@@ -104,10 +106,46 @@ span:hover{
 }
 @media only screen and (max-width: 500px){
 
+.logo{animation: bounce 1s infinite;}
 
-	
+.button{
+  animation: bounce-button .5s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+	background: #66fcf1;
+	border-radius: 100%;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bounce-button {
+  
+  0% {
+	/* background:  0%; */
+    background-position: right bottom;
+  }
+  100% {
+	/* background:  #2a7974 100%; */
+    background-position: left bottom;
+  }
+}
+
+li{
+	margin-bottom: 11px;
+}	
+.links{
+	padding-top: 15px;
+}
 .my-footer{
-	padding: 65px 45px;
+	padding: 65px 25px;
 }
 }
 </style>

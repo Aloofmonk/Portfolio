@@ -73,7 +73,9 @@ p{
 
 @media only screen and (max-width: 500px) {
 .about-me{
-	width: 65%;
+	width: 100%;
+	padding-left: 30px;
+	padding-right: 20px;
 }
 .wrap{
 	flex-direction: column;
@@ -88,7 +90,10 @@ width: 100%;
 border-radius: 6px;
 position: relative;
 filter: grayscale(100%);
-margin-bottom: 20px;
+margin-bottom: 5px;
+}
+.image{
+	margin-bottom: 25px;
 }
 .img:hover{
 position: relative;
@@ -105,6 +110,7 @@ p{
 color: #c5c6c7;
 font-family: 'Roboto Mono', monospace;
 font-size: 14px;
+/* width: 100%; */
 }
 }
 </style>

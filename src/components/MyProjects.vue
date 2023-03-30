@@ -206,15 +206,21 @@ font-family: 'Roboto Mono', monospace;
     flex-direction: column;
 }
 .text{
-    position: relative;
-    right: 100px;
+    /* position: relative;
+    right: 100px; */
     font-size: 25px;
-
+    width: 100%;
+    padding-left: 105px;
+    margin-bottom: 25px;
+}
+.card-container{
+    padding-top: 60px;
 }
 .card{
     width: 120%;
     margin-left: -20px;
-
+    margin-bottom: 15px;
 }
+
 }
 </style>

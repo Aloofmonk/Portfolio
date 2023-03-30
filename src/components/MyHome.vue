@@ -7,7 +7,7 @@
 			<p class="hi-p"  v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1000">Hi, my name is </p>
 			<h1 v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1100" class="text-7xl font-bold mb-5">BENJAMIN NOMBA.</h1>
 			<h1 v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1200" class="h1-2 text-6xl font-bold mb-7">I build things web related.</h1>
-			<p v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1300" class="mb-14 w-4/6">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. My focus has always been building accessible, human-centered products and Curating indepth Knowledge in my specialization along the way.</p>
+			<p v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1300" class="p-1 mb-8 w-4/6">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. My focus has always been building accessible, human-centered products and Curating indepth Knowledge in my specialization along the way.</p>
 
 			<div v-motion :initial="{ opacity: 0,  x: -200, }" :enter="{ opacity: 1,  x: 0, }" :delay="1400" class="button-div">
 
@@ -80,18 +80,25 @@ h1{
 	}
 	.button{
 		padding: 8px 16px;
+		/* text-align: center; */
+	}
+	.button-div{
+		width: 100%;
+		padding-left: 35px;
 	}
 	p{
 		font-size: 14px;
-		line-height: 1.3;
+		/* line-height: 1.3; */
+		width: 100%;
 	}
 	h1{
-		font-size: 22px;
-		line-height: 1.1;
+		font-size: 35px;
+		/* line-height: 1.1; */
+		margin-bottom: 10px;
 	}
 	.h1-2{
-		font-size: 20px;
-		line-height: 1.1;
+		font-size: 30px;
+		/* line-height: 1.1; */
 	}
 }
 </style>
