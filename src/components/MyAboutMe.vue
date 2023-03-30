@@ -4,7 +4,7 @@
 		<div class="wrap flex flex justify-center items-center gap-12">
 
 			<div class="about-me w-2/5 text-left" >
-				<p v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="700">
+				<p v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="900">
 					Hello! My name is Benjamin and I enjoy creating things that live on the internet. My interest in web development and engineering started back in 2018 when I started my computer science major — I started with the basics and soon after I knew a lot about HTML & CSS!
 					<br>
 					<br>
