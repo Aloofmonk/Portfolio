@@ -102,4 +102,12 @@ span{
 span:hover{
 	border-bottom: 2px solid #66fcf1;
 }
+@media only screen and (max-width: 500px){
+
+
+	
+.my-footer{
+	padding: 65px 45px;
+}
+}
 </style>

@@ -125,5 +125,20 @@ p{
 	bottom: -5px;
 	opacity: 1;
 }
-
+@media only screen and (max-width: 500px){
+img{
+	width: 50px;
+}
+.wrapper-flex{
+	display: grid;
+	grid-template-columns: repeat(2, 50px);
+	margin-bottom: 5px;
+	/* row-gap: -3px; */
+	/* column-gap: -10px; */
+}
+.wrapper-flex-2{
+	display: grid;
+	grid-template-columns: repeat(2, 50px);
+}
+}
 </style>

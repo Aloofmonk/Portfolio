@@ -73,4 +73,25 @@ h1{
 	color: #45A29E;
 }
 
+@media only screen and (max-width: 500px) {
+	.home{
+		padding-top: 60px;
+		margin-bottom: 40px;
+	}
+	.button{
+		padding: 8px 16px;
+	}
+	p{
+		font-size: 14px;
+		line-height: 1.3;
+	}
+	h1{
+		font-size: 22px;
+		line-height: 1.1;
+	}
+	.h1-2{
+		font-size: 20px;
+		line-height: 1.1;
+	}
+}
 </style>

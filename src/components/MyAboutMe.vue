@@ -1,7 +1,7 @@
 <template>
 	<div  id="about" class="About " >
 		<h1 v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="500"> <span>01.</span> About</h1>
-		<div class="flex flex justify-center items-center gap-12">
+		<div class="wrap flex flex justify-center items-center gap-12">
 
 			<div class="about-me w-2/5 text-left" >
 				<p v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="700">
@@ -71,4 +71,40 @@ p{
 	font-family: 'Roboto Mono', monospace;
 }
 
+@media only screen and (max-width: 500px) {
+.about-me{
+	width: 65%;
+}
+.wrap{
+	flex-direction: column;
+	flex-direction: column-reverse;
+}
+.About{
+margin-bottom: 60px;
+padding-top: 50px;
+}
+.img{
+width: 100%;
+border-radius: 6px;
+position: relative;
+filter: grayscale(100%);
+margin-bottom: 20px;
+}
+.img:hover{
+position: relative;
+filter: grayscale(0%);
+}
+h1{
+color: #66fcf1;
+font-family: 'Ubuntu', sans-serif;
+font-size: 25px;
+margin-bottom: 30px;
+padding-right: 10px;
+}
+p{
+color: #c5c6c7;
+font-family: 'Roboto Mono', monospace;
+font-size: 14px;
+}
+}
 </style>

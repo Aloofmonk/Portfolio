@@ -200,4 +200,21 @@ font-family: 'Roboto Mono', monospace;
     margin-bottom: 60px;
     padding-top: 100px;
 }
+@media only screen and (max-width: 500px){
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    position: relative;
+    right: 100px;
+    font-size: 25px;
+
+}
+.card{
+    width: 120%;
+    margin-left: -20px;
+
+}
+}
 </style>

@@ -28,7 +28,7 @@ import MyFooter from './MyFooter';
 
 <style scoped>
 .contact-container{
-	width: 40%;
+	width: 100%;
 }
 .contact{
  padding-top: 177px;
@@ -55,5 +55,17 @@ h1{
 .text{
 	color: #c5c6c7;
 	font-family: 'Roboto Mono', monospace;
+}
+@media only screen and (max-width: 500px){
+h1{
+	text-align: center;
+	font-size: 40px;
+	white-space: nowrap;
+	
+}
+.text{
+	width: 95%;
+	padding-left: 20px;
+}
 }
 </style>
