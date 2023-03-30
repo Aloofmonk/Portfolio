@@ -63,6 +63,22 @@ h1{
 	visibility: hidden;
 }
 @media only screen and (max-width: 500px){
+
+.button{
+  animation: bounce-button 1s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce-button {
+  
+  0% {
+    background-position: right bottom;
+  }
+  100% {
+    background-position: left bottom;
+  }
+}
+
 h1{
 	text-align: center;
 	font-size: 40px;

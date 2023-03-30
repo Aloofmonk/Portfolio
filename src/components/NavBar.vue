@@ -1,17 +1,17 @@
 <template>
 	<div :class="{'navbar': true, 'navbar--hidden': isNavbarHidden }">
 
-		<button v-motion :initial="{ y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="550" @click="ex = !ex" id="menu-btn" class=" block hamburger" :class="[ex === true ? 'open' : '' ]">
+		<button v-motion :initial="{ y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="550" @click="ex = !ex; add = !add" id="menu-btn" class=" block hamburger" :class="[ex === true ? 'open' : '' ]">
 			<span class="ham1"></span>
 			<span class="ham2"></span>
 			<span class="ham3"></span>
 		</button>
 
 		<div class="neu" :id="[ex === true ? 'open-menu' : 'menu']">
-			<a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" href="#about">about</a>
-			<a @click="activeLink = 'projects'" :class="[activeLink === 'projects' ? 'active' : '']" href="#projects">projects</a>
-			<a @click="activeLink = 'technologies'" :class="[activeLink === 'technologies' ? 'active' : '']" href="#technologies">technologies</a>
-			<a @click="activeLink = 'contact'" class="cont" :class="[activeLink === 'contact' ? 'active' : '']" href="#contact">contact</a>
+			<a class="a" @click="activeLink = 'about'; ex = !ex" :class="[activeLink === 'about' ? 'active' : '', add === true && 'li']" href="#about">about</a>
+			<a class="a" @click="activeLink = 'projects'; ex = !ex" :class="[activeLink === 'projects' ? 'active' : '', add === true && 'li']" href="#projects">projects</a>
+			<a class="a" @click="activeLink = 'technologies'; ex = !ex" :class="[activeLink === 'technologies' ? 'active' : '', add === true && 'li']" href="#technologies">technologies</a>
+			<a @click="activeLink = 'contact'; ex = !ex" class="cont a" :class="[activeLink === 'contact' ? 'active' : '', add === true && 'li']" href="#contact">contact</a>
 		</div>
 
 		<div class="logo" v-motion :initial="{ opacity: 0, x: -100}" :enter="{ opacity: 1, x: 0}" :delay="1500">
@@ -57,7 +57,8 @@ export default {
 			isNavbarHidden: false,
 			activeLink: '',
 			ex: false,
-			view: 'menu'
+			view: 'menu',
+			add: false,
 		};
 	},
 	computed: {
@@ -116,10 +117,6 @@ li:hover{
 	color: #66fcf1;
 	transition: color 0.5s ;
 }
-li:visited{
-	color: #66fcf1;
-	transition: color 0.5s ;
-}
 .active{
 	border-bottom:2px solid #66fcf1;
 	color: #66fcf1;
@@ -147,10 +144,6 @@ li:visited{
 	box-sizing: border-box;
 }
 
-/* .navbar--hidden {
-  transform: translateY(0px);
-} */
-
 	.logo{
 		display: none;
 	}
@@ -158,15 +151,14 @@ li:visited{
 	#menu{
 		display:flex;
 		position: fixed;
-		/* bottom: 50px; */
 		top: 35px;
 		left: -300px;
 		flex-direction: column;
 		align-items: center;
 		align-self: end;
-		display: none;
 		padding: 0 100px;
 		padding-top: 20px;
+		opacity: 0;
 		margin-top: 10;
 		font-weight: bold;
 		background: rgb(35, 59, 89); ;
@@ -174,13 +166,14 @@ li:visited{
 		width: auto;
 		z-index: 100;
 		color: #c5c6c7;
-		transition: left .7s ease-out;
+		transition: all .7s ease-out;
+		animation: bounce-button 1s ease-in-out;
+		animation-direction: reverse;
 
 	}
 	#open-menu{
 		display:flex;
 		position: fixed;
-		/* bottom: 50px; */
 		top: 35px;
 		left: 35px;
 		flex-direction: column;
@@ -197,12 +190,18 @@ li:visited{
 		z-index: 1000;
 		color: #c5c6c7;
 		border-radius: 5px;
-		transition: left .7s ease-out;
+		transition: all .7s ease-out;
+		animation: bounce-button 1s ease-in-out;
+		animation-direction: alternate;
+		box-shadow: 3px 0 10px rgb(29, 29, 29);
 
 	}
-	a{
+
+	.a{
 		margin-bottom: 40px;
+
 	}
+
 	.cont{
 		margin-bottom: 20px;
 	}
@@ -248,6 +247,31 @@ li:visited{
 	}
 	.open .ham3{
 		transform: rotate(-45deg) translateY(6px) translate(-6px);
+	}
+
+	@keyframes bounce-button {
+  
+		0% {
+			/* background:  0%; */
+			left: -300px;
+		}
+		100% {
+			/* background:  #2a7974 100%; */
+			left: 35px;
+		}
+	}
+
+	@keyframes appear-button {
+  
+		0% {
+			opacity: 0;
+		}
+		50% {
+			opacity: 0.5;
+		}
+		100% {
+			opacity: 1;
+		}
 	}
 }
 </style>

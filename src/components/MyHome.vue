@@ -74,6 +74,24 @@ h1{
 }
 
 @media only screen and (max-width: 500px) {
+
+.button{
+  animation: bounce-button 1s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bounce-button {
+  
+  0% {
+	/* background:  0%; */
+    background-position: right bottom;
+  }
+  100% {
+	/* background:  #2a7974 100%; */
+    background-position: left bottom;
+  }
+}
+
 	.home{
 		padding-top: 60px;
 		margin-bottom: 40px;

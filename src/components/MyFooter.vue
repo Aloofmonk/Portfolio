@@ -109,7 +109,7 @@ span:hover{
 .logo{animation: bounce 1s infinite;}
 
 .button{
-  animation: bounce-button .5s ease-in-out infinite;
+  animation: bounce-button 1s ease-in-out infinite;
   animation-direction: alternate;
 }
 
