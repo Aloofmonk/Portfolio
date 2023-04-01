@@ -147,5 +147,6 @@ li{
 .my-footer{
 	padding: 65px 25px;
 }
+
 }
 </style>

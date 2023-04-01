@@ -1,11 +1,12 @@
 <template>
 	<div :class="{'navbar': true, 'navbar--hidden': isNavbarHidden }">
 
-		<button v-motion :initial="{ y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="550" @click="ex = !ex; add = !add" id="menu-btn" class=" block hamburger" :class="[ex === true ? 'open' : '' ]">
-			<span class="ham1"></span>
-			<span class="ham2"></span>
-			<span class="ham3"></span>
-		</button>
+			<button v-motion :initial="{ y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="550" @click="ex = !ex; add = !add" id="menu-btn" class=" block hamburger" :class="[ex === true ? 'open' : '' ]">
+				<span class="ham1"></span>
+				<span class="ham2"></span>
+				<span class="ham3"></span>
+			</button>
+
 
 		<div class="neu" :id="[ex === true ? 'open-menu' : 'menu']">
 			<a class="a" @click="activeLink = 'about'; ex = !ex" :class="[activeLink === 'about' ? 'active' : '', add === true && 'li']" href="#about">about</a>
@@ -159,9 +160,10 @@ li:hover{
 		padding: 0 100px;
 		padding-top: 20px;
 		opacity: 0;
+		visibility: hidden;
 		margin-top: 10;
 		font-weight: bold;
-		background: rgb(35, 59, 89); ;
+		background: rgb(35, 59, 89);
 		align-self: center;
 		width: auto;
 		z-index: 100;
@@ -184,7 +186,7 @@ li:hover{
 		padding-top: 20px;
 		margin-top: 10;
 		font-weight: bold;
-		background: #283647 ;
+		background: rgba(40, 54, 71, 0.99);
 		align-self: center;
 		width: auto;
 		z-index: 1000;
@@ -194,7 +196,7 @@ li:hover{
 		animation: bounce-button 1s ease-in-out;
 		animation-direction: alternate;
 		box-shadow: 3px 0 10px rgb(29, 29, 29);
-
+		
 	}
 
 	.a{
@@ -205,8 +207,8 @@ li:hover{
 	.cont{
 		margin-bottom: 20px;
 	}
+	
 	.hamburger{
-		position: absolute;
 		left: 300px;
 		cursor: pointer;
 		width: 24px;
@@ -215,7 +217,15 @@ li:hover{
 		position: fixed;
 		display: inherit;
 		z-index: 10000;
+		box-shadow: none;
 		outline: none;
+		backdrop-filter: blur(100px);
+		background: rgba(54, 72, 94, 0.35);
+		border-radius: 5px;
+		padding-bottom: -10px;
+	}
+	.hamburger button:focus{
+		box-shadow: none;
 	}
 	.ham1,
 	.ham2,
@@ -248,21 +258,15 @@ li:hover{
 	.open .ham3{
 		transform: rotate(-45deg) translateY(6px) translate(-6px);
 	}
-
 	@keyframes bounce-button {
-  
 		0% {
-			/* background:  0%; */
 			left: -300px;
 		}
 		100% {
-			/* background:  #2a7974 100%; */
 			left: 35px;
 		}
 	}
-
 	@keyframes appear-button {
-  
 		0% {
 			opacity: 0;
 		}
