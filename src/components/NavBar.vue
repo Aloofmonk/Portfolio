@@ -162,18 +162,18 @@ li:hover{
 	#menu{
 		display:flex;
 		position: fixed;
-		top: 35px;
-		left: -300px;
+		top: 0px;
+		left: -320px;
 		flex-direction: column;
 		align-items: center;
 		align-self: end;
 		padding: 0 100px;
 		padding-top: 20px;
-		opacity: 0;
+		/* opacity: 0; */
 		visibility: hidden;
 		margin-top: 10;
 		font-weight: bold;
-		background: rgb(35, 59, 89);
+		background: rgba(40, 54, 71, 0.99);;
 		align-self: center;
 		width: auto;
 		z-index: 100;
@@ -186,13 +186,14 @@ li:hover{
 	#open-menu{
 		display:flex;
 		position: fixed;
-		top: 35px;
-		left: 35px;
+		top: 0px;
+		left: 0px;
 		flex-direction: column;
 		align-items: center;
 		align-self: end;
 		visibility: visible;
-		padding: 0 100px;
+		padding-left: 80px;
+		padding-right: 80px;
 		padding-top: 20px;
 		margin-top: 10;
 		font-weight: bold;
