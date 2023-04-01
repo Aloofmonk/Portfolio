@@ -6,7 +6,7 @@
 			<div class="logo-img pt-28">
 				<a href="#home">
 					
-					<img src="../images/bee.png" alt="" class=" logo w-11">
+					<img src="../images/bee.jpg" alt="" class=" logo w-11">
 				</a>
 			</div>
 			<div class="links">
@@ -14,15 +14,15 @@
 					<li class="li-button"><a href="https://drive.google.com/file/d/1oHiAa40omJBT40nmi8ZFMJSSCIGGFrU5/view"><button class="button">resume</button></a>
 					</li>
 					<li class=" img">
-						<a href="https://github.com/Aloofmonk"><img src="../images/github.png" alt="" class=" icon w-6">
+						<a href="https://github.com/Aloofmonk"><img src="../images/github.jpg" alt="" class=" icon w-6">
 						</a>
 					</li>
 					<li class=" img">
-						<a href="https://www.linkedin.com/in/benjamin-nomba-61351621a/"><img src="../images/linke.png" alt="" class=" icon w-6"></a>
+						<a href="https://www.linkedin.com/in/benjamin-nomba-61351621a/"><img src="../images/linke.jpg" alt="" class=" icon w-6"></a>
 					</li>
 					<li class=" img">
 						<div class="img-back">
-							<a href="https://twitter.com/codersoda"><img src="../images/twitter.png" alt="" class=" icon w-6"></a>
+							<a href="https://twitter.com/codersoda"><img src="../images/twitter.jpg" alt="" class=" icon w-6"></a>
 						</div>
 					</li>
 				</ul>
@@ -83,7 +83,6 @@ p{
     transform: translateY(-6px);
 	background: #66fcf1; 
 	border-radius: 100%;
-	
 }
 .img{
 	padding-left: 35%;
