@@ -110,7 +110,13 @@ p{
 color: #c5c6c7;
 font-family: 'Roboto Mono', monospace;
 font-size: 14px;
-/* width: 100%; */
+}
+.img{
+	border-radius: 6px;
+	position: relative;
+	filter: grayscale(0%);
+	left: 10px;
+	bottom: 5px;
 }
 }
 </style>
