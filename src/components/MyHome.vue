@@ -7,7 +7,7 @@
 			<p class="hi-p"  v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1000">Hi, my name is </p>
 			<h1 v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1100" class="text-7xl font-bold mb-5">BENJAMIN NOMBA.</h1>
 			<h1 v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1200" class="h1-2 text-6xl font-bold mb-7">I build things web related.</h1>
-			<p v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1300" class="p-1 mb-8 w-4/6">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. My focus has always been building accessible, human-centered products and Curating indepth Knowledge in my specialization along the way.</p>
+			<p v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1300" class="p-1 mb-8 w-4/6">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. My focus has always been building accessible and human-centered products.</p>
 
 			<div v-motion :initial="{ opacity: 0,  x: -200, }" :enter="{ opacity: 1,  x: 0, }" :delay="1400" class="button-div">
 

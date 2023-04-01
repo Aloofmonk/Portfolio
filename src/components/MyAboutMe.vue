@@ -5,13 +5,13 @@
 
 			<div class="about-me w-2/5 text-left" >
 				<p v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="900">
-					Hello! My name is Benjamin and I enjoy creating things that live on the internet. My interest in web development and engineering started back in 2018 when I started my computer science major — I started with the basics and soon after I knew a lot about HTML & CSS!
+					Hello! My name is Benjamin and I enjoy creating things that live on the interweb. My interest in web development and engineering began back in 2018 when I started my computer science major — I arrived at the basics and soon after I knew a lot about HTML & CSS!
 					<br>
 					<br>
-					Fast-forward to today, and I’ve had the privilege of attending Alt-School Africa. A Pan-African Technology School and a huge organisation. My main focus these days is building accessible, inclusive products and digital experiences for a variety of users.
+					Fast-forward to today, and I’ve had the privilege of attending A Pan-African Technology School and a huge organisation, to Curate indepth Knowledge in my specialization. My main focus these days is building accessible, inclusive products and digital experiences for a variety of users.
 					<br>
 					<br>
-					I also Do Technical writting and I like to learn various technologies in my spare time, which will help me build better web applictions.
+					I also Do a bit of Technical writting and I like to learn various technologies in my spare time, which help me build better web applictions.
 				</p>
 			</div>
 	
