@@ -12,10 +12,10 @@
 			<a class="a" @click="activeLink = 'home'; ex = !ex" :class="[activeLink === 'home' ? 'active-button' : '', add === true && 'li']" href="#home">
 				<img src="../images/bee.jpg" alt="" class="w-10">
 			</a>
-			<a class="a" @click="activeLink = 'about'; ex = !ex" :class="[activeLink === 'about' ? 'active' : '', add === true && 'li']" href="#about">about</a>
-			<a class="a" @click="activeLink = 'projects'; ex = !ex" :class="[activeLink === 'projects' ? 'active' : '', add === true && 'li']" href="#projects">projects</a>
-			<a class="a" @click="activeLink = 'technologies'; ex = !ex" :class="[activeLink === 'technologies' ? 'active' : '', add === true && 'li']" href="#technologies">technologies</a>
-			<a @click="activeLink = 'contact'; ex = !ex" class="cont a" :class="[activeLink === 'contact' ? 'active' : '', add === true && 'li']" href="#contact">contact</a>
+			<a class="a" @click="activeLink = 'about'; ex = !ex" :class="[activeLink === 'about' ? 'active' : '', add === true && 'li']" href="#about"><span>01.</span> About</a>
+			<a class="a" @click="activeLink = 'projects'; ex = !ex" :class="[activeLink === 'projects' ? 'active' : '', add === true && 'li']" href="#projects"><span>02.</span> Projects</a>
+			<a class="a" @click="activeLink = 'technologies'; ex = !ex" :class="[activeLink === 'technologies' ? 'active' : '', add === true && 'li']" href="#technologies"><span>03.</span> Technologies</a>
+			<a @click="activeLink = 'contact'; ex = !ex" class="cont a" :class="[activeLink === 'contact' ? 'active' : '', add === true && 'li']" href="#contact"><span>04.</span> Contact</a>
 		</div>
 
 		<div class="logo" v-motion :initial="{ opacity: 0, x: -100}" :enter="{ opacity: 1, x: 0}" :delay="1500">
@@ -31,17 +31,17 @@
 			<ul class="flex">
 				<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0}" :delay="350">
 					
-					<a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" href="#about"> <span>01.</span>about</a>
+					<a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" href="#about"> <span>01.</span>About</a>
 				</li>
 				<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="450">
-					<a @click="activeLink = 'projects'" :class="[activeLink === 'projects' ? 'active' : '']" href="#projects"><span>02.</span>projects</a>
+					<a @click="activeLink = 'projects'" :class="[activeLink === 'projects' ? 'active' : '']" href="#projects"><span>02.</span>Projects</a>
 				</li>
 				<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="550">
 					<a @click="activeLink = 'technologies'" :class="[activeLink === 'technologies' ? 'active' : '']" href="#technologies"><span>03.</span>Technologies</a>
 				</li>
 				<div class="li">
 					<li v-motion :initial="{ opacity: 0, y: -100 }" :enter="{ opacity: 1, y: 0 }" :delay="650">
-						<a @click="activeLink = 'contact'" :class="[activeLink === 'contact' ? 'active' : '']" href="#contact"><span>04.</span>contact</a>
+						<a @click="activeLink = 'contact'" :class="[activeLink === 'contact' ? 'active' : '']" href="#contact"><span>04.</span>Contact</a>
 					</li>	
 				</div>
 				
