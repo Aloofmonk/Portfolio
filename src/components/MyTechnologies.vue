@@ -9,38 +9,38 @@
 				<div v-motion :initial="{ opacity: 0, x:-300 }" :visibleOnce="{ opacity: 1, x:0 }" :delay="900" class="wrapper-flex">
 
 					<div class="wrapper">
-						<img src="../images/html.png" alt="" width="100px" class=" icon ">
+						<img src="../images/html.jpg" alt="pic"  class=" icon ">
 						<div class="hshow"><h3>HTML</h3></div>
 					</div>
 					<div class="wrapper">
-						<img src="../images/css-3.png" alt="" width="100px" class=" icon ">
+						<img src="../images/css-3.jpg" alt="" class=" icon ">
 						<div class="hshow"><h3>CSS</h3></div>
 					</div>
 					<div class="wrapper">
-						<img src="../images/js.png" alt="" width="100px" class=" icon ">
+						<img src="../images/js.jpg" alt="" class=" icon ">
 						<div class="hshow"><h3>JavaScript</h3></div>
 					</div>
 					<div  class="wrapper">
-						<img src="../images/vue.png" alt="" width="100px" class=" icon">
+						<img src="../images/vue.jpg" alt="" class=" icon">
 						<div class="hshow"><h3>VUE</h3></div>
 					</div>
 				</div>
 				<div v-motion :initial="{ opacity: 0, x: 300 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="1100" class="wrapper-flex-2">
 
 					<div class="wrapper">
-						<img src="../images/physics.png" alt="" width="100px" class=" icon">
+						<img src="../images/physics.jpg" alt="" class=" icon">
 						<div class="hshow"><h3>REACT</h3></div>
 					</div>
 					<div class="wrapper">
-						<img src="../images/tail.png" alt="" width="110px" class=" icon">
+						<img src="../images/tail.jpg" alt="" width="110px" class=" icon">
 						<div class="hshow"><h3>TailWind</h3></div>
 					</div>
 					<div class="wrapper">
-						<img src="../images/firebase.png" alt="" width="100px" class=" icon ">
+						<img src="../images/firebase.jpg" alt="" class=" icon ">
 						<div class="hshow"><h3>FireBase</h3></div>
 					</div>
 					<div class="wrapper">
-						<img src="../images/githubhub.png" alt=""  width="100px" class=" icon-pop">
+						<img src="../images/githubhub.jpg" alt=""  class=" icon-pop">
 						<div class="hshow"><h3>GitHub</h3></div>
 					</div>
 				</div>
@@ -125,6 +125,9 @@ p{
 	bottom: -5px;
 	opacity: 1;
 }
+img{
+	width:100px;
+}
 @media only screen and (max-width: 500px){
 img{
 	width: 50px;
@@ -133,8 +136,6 @@ img{
 	display: grid;
 	grid-template-columns: repeat(2, 50px);
 	margin-bottom: 5px;
-	/* row-gap: -3px; */
-	/* column-gap: -10px; */
 }
 .wrapper-flex-2{
 	display: grid;

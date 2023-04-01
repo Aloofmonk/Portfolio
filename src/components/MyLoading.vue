@@ -1,6 +1,6 @@
 <template>
 	<div class="loading-screen">
-		<img class="icon" src="../images/bee.png" alt="b">
+		<img class="icon" src="../images/bee.jpg" alt="b">
 	</div>
 </template>
 

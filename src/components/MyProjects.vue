@@ -7,7 +7,7 @@
             <div class="cards">
                 <div v-motion :initial="{ opacity: 0, x: -100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="700" class="card card1">
                     <div class="container">
-                        <img src="../images/first.png" alt="las vegas">
+                        <img src="../images/first.jpg" alt="las vegas">
                     </div>
                     <div class="details">
                         <div class="project-link flex justify-evenly">
@@ -25,7 +25,7 @@
                 </div>
                 <div v-motion :initial="{ opacity: 0, x: 100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="800" class="card card1">
                     <div class="container">
-                        <img src="../images/calc.png" alt="las vegas">
+                        <img src="../images/calc.jpg" alt="las vegas">
                     </div>
                     <div class="details">
                         <div class="project-link flex justify-evenly">
@@ -44,7 +44,7 @@
                 </div>
                 <div v-motion :initial="{ opacity: 0, x: -100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="200" class="card card1">
                     <div class="container">
-                        <img src="../images/buyy.png" alt="las vegas">
+                        <img src="../images/buyy.jpg" alt="las vegas">
                     </div>
                     <div class="details">
                         <div class="project-link flex justify-evenly">
@@ -63,7 +63,7 @@
                 </div>
                 <div v-motion :initial="{ opacity: 0, x: 100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="300" class="card card1">
                     <div class="container">
-                        <img src="../images/portfolio.png" alt="las vegas">
+                        <img src="../images/portfolio.jpg" alt="las vegas">
                     </div>
                     <div class="details">
                         <div class="project-link flex justify-evenly">

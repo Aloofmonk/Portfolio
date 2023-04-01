@@ -9,6 +9,9 @@
 
 
 		<div class="neu" :id="[ex === true ? 'open-menu' : 'menu']">
+			<a class="a" @click="activeLink = 'home'; ex = !ex" :class="[activeLink === 'home' ? 'active-button' : '', add === true && 'li']" href="#home">
+				<img src="../images/bee.jpg" alt="" class="w-10">
+			</a>
 			<a class="a" @click="activeLink = 'about'; ex = !ex" :class="[activeLink === 'about' ? 'active' : '', add === true && 'li']" href="#about">about</a>
 			<a class="a" @click="activeLink = 'projects'; ex = !ex" :class="[activeLink === 'projects' ? 'active' : '', add === true && 'li']" href="#projects">projects</a>
 			<a class="a" @click="activeLink = 'technologies'; ex = !ex" :class="[activeLink === 'technologies' ? 'active' : '', add === true && 'li']" href="#technologies">technologies</a>
@@ -19,7 +22,7 @@
 			<div  class="">
 				<a href="./MyHome.vue">
 
-					<img src="../images/bee.png" alt="" class="w-10">
+					<img src="../images/bee.jpg" alt="" class="w-10">
 				</a>
 			</div>
 		</div>
@@ -123,6 +126,13 @@ li:hover{
 	color: #66fcf1;
 	transition: all 0.5 ease-out;
 	border-radius: 2px;
+}
+.active-button{
+	color: #66fcf1;
+	cursor: pointer;
+    transform: translateY(-6px);
+	background: #66fcf1; 
+	border-radius: 100%;
 }
 .neu{
 	display: none;
