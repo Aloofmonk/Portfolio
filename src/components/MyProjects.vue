@@ -42,6 +42,24 @@
             respectively.</p>
                     </div>
                 </div>
+                <div v-motion :initial="{ opacity: 0, x: 100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="300" class="card card1">
+                    <div class="container">
+                        <img src="../images/alooffit.png" alt="las vegas">
+                    </div>
+                    <div class="details">
+                        <div class="project-link flex justify-evenly">
+                            <a href="https://github.com/Aloofmonk/alooffit">
+                                <font-awesome-icon icon="fa-solid fa-code-compare" class="font" />
+                            </a>
+                            <h3>Portfolio</h3>
+                            <a href="https://alooffits.vercel.app">
+                                <font-awesome-icon icon="arrow-up-right-from-square" class="font" />
+                            </a>
+                        </div>
+                        
+                        <p>A website that showcases Pristin footwares, with a color palette of no more than three colors used so far. All Designs and functionality built by me. Source code is made totally accessible!.</p>
+                    </div>
+                </div>
                 <div v-motion :initial="{ opacity: 0, x: -100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="200" class="card card1">
                     <div class="container">
                         <img src="../images/buyy.jpg" alt="las vegas">
@@ -59,24 +77,6 @@
                         
                         <p>An ecommerce website which features a variety of products and a checkout shopping cart to
             keep track of selected items and total amount.</p>
-                    </div>
-                </div>
-                <div v-motion :initial="{ opacity: 0, x: 100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="300" class="card card1">
-                    <div class="container">
-                        <img src="../images/portfolio.jpg" alt="las vegas">
-                    </div>
-                    <div class="details">
-                        <div class="project-link flex justify-evenly">
-                            <a href="https://github.com/Aloofmonk/myPortfolio">
-                                <font-awesome-icon icon="fa-solid fa-code-compare" class="font" />
-                            </a>
-                            <h3>Portfolio</h3>
-                            <a href="https://benjaminnomba.vercel.app/MyHome.vue">
-                                <font-awesome-icon icon="arrow-up-right-from-square" class="font" />
-                            </a>
-                        </div>
-                        
-                        <p>A website made to showcase my work, while being itself a project that I'm proud of. It shows howfar I've come and how much further I'm willing to go in my budding SE career. Source code is made totally accessible!.</p>
                     </div>
                 </div>
                 
