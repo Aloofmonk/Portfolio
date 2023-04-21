@@ -52,7 +52,7 @@ export default{
 	background: linear-gradient(to right, #2a7974 50%, #1f2833 50%);
 	background-size: 200% 100%;
 	background-position: right bottom;
-	transition: all .5s ease-out;
+	transition: all .5s ease-in-out;
 	color:#66fcf1;
 }
 .button:hover{

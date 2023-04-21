@@ -51,32 +51,31 @@
                             <a href="https://github.com/Aloofmonk/alooffit">
                                 <font-awesome-icon icon="fa-solid fa-code-compare" class="font" />
                             </a>
-                            <h3>Portfolio</h3>
+                            <h3>AloofFit</h3>
                             <a href="https://alooffits.vercel.app">
                                 <font-awesome-icon icon="arrow-up-right-from-square" class="font" />
                             </a>
                         </div>
                         
-                        <p>A website that showcases Pristin footwares, with a color palette of no more than three colors used so far. All Designs and functionality built by me. Source code is made totally accessible!.</p>
+                        <p>A website that showcases Pristine footwears to go with whatever style unique to the customer, with detailed, vintage shoe cars collects. All Designs and functionality built by me. Source code is made totally accessible!.</p>
                     </div>
                 </div>
                 <div v-motion :initial="{ opacity: 0, x: -100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="200" class="card card1">
                     <div class="container">
-                        <img src="../images/buyy.jpg" alt="las vegas">
+                        <img src="../images/scmm.png" alt="las vegas">
                     </div>
                     <div class="details">
                         <div class="project-link flex justify-evenly">
-                            <a href="https://github.com/Aloofmonk/shopping-app">
+                            <a href="https://github.com/Aloofmonk/SCMproto">
                                 <font-awesome-icon icon="fa-solid fa-code-compare" class="font"/>
                             </a>
-                            <h3>Buyyapp</h3>
-                            <a href="https://buyyapp.vercel.app/">
+                            <h3>SCMproto</h3>
+                            <a href="https://sc-mproto.vercel.app/">
                                 <font-awesome-icon icon="arrow-up-right-from-square" class="font" />
                             </a>
                         </div>
                         
-                        <p>An ecommerce website which features a variety of products and a checkout shopping cart to
-            keep track of selected items and total amount.</p>
+                        <p>An Investment banking website namely, SCM Capital, which features tells the user about the firm and what investment packages they have to offer. While being accessibile and having an Efficient UI design..</p>
                     </div>
                 </div>
                 
