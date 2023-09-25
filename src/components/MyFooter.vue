@@ -11,7 +11,7 @@
 			</div>
 			<div class="links">
 				<ul class="flex flex-col gap-5">
-					<li class="li-button"><a href="https://drive.google.com/file/d/1oHiAa40omJBT40nmi8ZFMJSSCIGGFrU5/view"><button class="button">resume</button></a>
+					<li class="li-button"><a href="https://drive.google.com/file/d/12pZ-rGlg66AXMpai8TYG2rezStAT-pX-/view"><button class="button">resume</button></a>
 					</li>
 					<li class=" img">
 						<a href="https://github.com/Aloofmonk"><img src="../images/github.jpg" alt="" class=" icon w-6">
