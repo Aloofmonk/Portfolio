@@ -131,5 +131,16 @@ h1{
 		font-size: 30px;
 		/* line-height: 1.1; */
 	}
+	.fonty{
+		position: fixed;
+		/* transform: translateY(0); */
+		transition: all 0.5s ease-out;
+		color: #9a9b9c;
+		/* font-size: 500px; */
+		z-index: 100000;
+		right: 3px;
+		bottom: 75px;
+		font-size: 40px;
+	}
 }
 </style>
