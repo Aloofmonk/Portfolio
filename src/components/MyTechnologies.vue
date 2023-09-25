@@ -32,8 +32,8 @@
 						<div class="hshow"><h3>REACT</h3></div>
 					</div>
 					<div class="wrapper">
-						<img src="../images/tail.jpg" alt="" width="110px" class=" icon">
-						<div class="hshow"><h3>TailWind</h3></div>
+						<img src="../images/typeS.jpg" alt="" class=" icon-pop">
+						<div class="hshow"><h3>TypeScript</h3></div>
 					</div>
 					<div class="wrapper">
 						<img src="../images/firebase.jpg" alt="" class=" icon ">
