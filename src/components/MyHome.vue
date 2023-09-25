@@ -11,7 +11,7 @@
 
 			<div v-motion :initial="{ opacity: 0,  x: -200, }" :enter="{ opacity: 1,  x: 0, }" :delay="1400" class="button-div">
 
-				<a  href="https://drive.google.com/file/d/1oHiAa40omJBT40nmi8ZFMJSSCIGGFrU5/view">
+				<a  href="https://drive.google.com/file/d/12pZ-rGlg66AXMpai8TYG2rezStAT-pX-/view">
 					<button class="button">Check out my Resume</button>
 				</a>
 			</div>
