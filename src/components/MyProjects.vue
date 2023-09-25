@@ -188,7 +188,7 @@ font-family: 'Roboto Mono', monospace;
 .font{
     transform: translateY(0);
     transition: all 0.5s ease-out;
-    color: #9a9b9c;;
+    color: #9a9b9c;
 }
 .font:hover{
 	color: #66fcf1;

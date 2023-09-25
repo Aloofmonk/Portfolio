@@ -17,6 +17,8 @@
 			</div>
 			
 		</div>
+		<font-awesome-icon icon="fa-solid fa-arrow-down" class="fonty" bounce v-motion :initial="{ opacity: 0, y: -100, }" :enter="{ opacity: 1, y: 0, }" :delay="1400"/>
+
 	</div>
 </template>
 
@@ -71,6 +73,17 @@ h1{
 }
 .h1-2{
 	color: #45A29E;
+}
+.fonty{
+  position: fixed;
+  /* transform: translateY(0); */
+  transition: all 0.5s ease-out;
+  color: #9a9b9c;
+  /* font-size: 500px; */
+  z-index: 100000;
+  right: 50px;
+  bottom: 75px;
+  font-size: 50px;
 }
 
 @media only screen and (max-width: 500px) {
