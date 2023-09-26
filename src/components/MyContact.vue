@@ -6,7 +6,7 @@
 			<h1 v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="500" class="mb-8">Get In Touch</h1>
 			<div v-motion :initial="{ opacity: 0, y: 10 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="700" class="text mb-11">
 
-				<h4 class="text ">I am currently available and open to new opportunities. I will respond promptly to any inquiries. Thank you for reaching out!</h4>
+				<h4 class="text ">I am currently available and open to new opportunities and will respond promptly to any inquiries. Thank you for reaching out!</h4>
 			</div>
 			<a v-motion :initial="{ opacity: 0, y: 100 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="800" href="http://bnomba0704@gmail.com">
 				<button class="button">Email Me</button>
